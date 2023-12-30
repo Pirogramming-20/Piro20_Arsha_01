@@ -1,0 +1,153 @@
+/* header 시작 */
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 32px;
+    background: #023b6d;
+    display: flex;
+    align-items: center;
+}
+/* header logo */
+
+@media (max-width: 768px){
+    .header_logo {
+        display: none;
+    }
+}
+
+.header_logo {
+    padding-left: 10px;
+}
+
+.header_logo > a{
+    display: flex;
+}
+
+.header_logo img{
+    height: 25px;
+}
+
+/* 기기 선택 */
+@media (max-width: 1024px){
+    .preview-devices {
+        display: none;
+    }
+}
+
+.preview-devices {
+    margin-top: 2px;
+}
+
+.preview-devices ul {
+    margin: 0 0 0 20px;
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.preview-devices ul li{
+    padding: 5px;
+    color:var(--gray-unselect);
+}
+
+.preview-devices ul div{
+    width: 20px;
+    height: 25px;
+    font-size: 1rem;
+}
+
+.preview-devices li:nth-of-type(1){
+    color: #fff;
+}
+
+/* 최근 페이지 */
+@media (min-width: 768px){
+    .current-page {
+        margin-left: auto;
+    }
+}
+
+.current-page {
+    margin-top: -2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.header-icon-arrow{
+    width: 24px;
+    height: 24px;
+    text-align: center;
+}
+
+.header-icon-arrow > i{
+    font-size: 0.9rem;
+    color: var(--gray-unselect);
+}
+
+.Arsha-page{
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    margin: -2px 10px 0 10px;
+}
+
+/* 외부 사이트, 다운로드등의 네비게이션 */
+.navigate {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.navigate a {
+    display: flex;
+    align-items: center;
+}
+
+.icon_external_link{
+    width: 20px;
+    height: 23px;
+    color: var(--gray-unselect);
+
+}
+
+.download{
+    background: #00a6eb;
+    color: #fff;
+    font-size: 13px;
+    padding: 0 16px;
+    height: 32px;
+    font-weight: 700;
+    margin-left: 15px;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px){
+    .download {
+        padding: 0 10px;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+}
+
+.download > span{
+    text-transform: uppercase;
+    padding-left: 6px;
+}
+
+.download i{
+    width: 20px;
+    height: 17px;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .download i{
+        display: none;
+    }
+}
