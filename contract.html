@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="./reset.css" />
+    <script src="https://kit.fontawesome.com/4ea8e6bcbb.js" crossorigin="anonymous"></script>    <title>Document</title>
+</head>
+<body>
+    <contact>
+        <div class="contact_header">
+            <div class="contact_header-title">CONTACT</div>
+            <div class="contact_header-underline">
+                <div class="blue-underline"></div>
+            </div>
+            <div class="contact_header_description">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</div>
+        </div>
+        <div class="contact_body">
+            <div class="contact_body_left">
+                <div class="contact_body_left_top">
+                    <div class="item">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="text">
+                            <div class="text-header">Location:</div>
+                            <div class="text-content">A108 Adam Street, New York, NY 535022</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="text">
+                            <div class="text-header">Email:</div>
+                            <div class="text-content">info@example.com</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <div class="text">
+                            <div class="text-header">Call:</div>
+                            <div class="text-content">+1 5589 55488 55s</div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="map">
+                    <img src="./map.png" />
+                </div>
+            </div>
+            <form class="contact_body_right">
+                <div class="row-group">
+                    <div class="row-group_item">
+                        <label for="name" class="item-name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="row-group_item">
+                        <label for="email" class="item-name">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="item">
+                    <label for="subject" class="item-name">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="item">
+                    <label for="message" class="item-name">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="item">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+            
+        </div>
+    </contact>
+</body>
+</html>
