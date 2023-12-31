@@ -132,6 +132,79 @@
 
 
 
+.question .content-body{
+    padding: 0 100px;
+}
+.question .content-body i{
+    padding-right: 10px;
+    color: #47b2e4;
+    font-weight: 600;
+    font-size: 18px;
+}
+.question .content-body ul{
+    margin-bottom: 16px;
+}
+.question .content-body ul li{
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    position: relative;
+
+}
+
+.question .content-body ul li:nth-of-type(1) ,
+.question .content-body ul li:nth-of-type(2) ,
+.question .content-body ul li:nth-of-type(3) ,
+.question .content-body ul li:nth-of-type(4) {
+    margin-bottom: 15px;
+}
+
+.question .content-body label{
+    text-align: right;
+    color: #37517e;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 0 30px;
+    cursor: pointer;
+}
+.question .toggle-checkbox {
+    display: none; /* Hide checkbox */
+}
+
+.question .toggle-checkbox + label + p {
+    display: none; 
+}
 
 
+.question .toggle-checkbox:checked + label + p {
+    display: block; 
+}
+.question .content-body label {
+    display: flex;
+    justify-content: space-between; /* Space out the label's contents */
+    align-items: center; /* Align items vertically in the center */
+}
+.question .toggle-checkbox:checked + label {
+    color: #47b2e4;
+    /* font-weight: 600;
+    font-size: 18px; */
+    cursor: pointer;
+}
+
+.question .content-body li:hover {
+    color: #47b2e4;
+
+}
+
+.question .content-body i {
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.question .content-body p{
+    padding-top: 10px;
+    line-height: 1.5;
+}
 

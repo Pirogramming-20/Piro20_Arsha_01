@@ -55,11 +55,12 @@
 }
 .contact_header_description,
 .team-header .description,
-.pricing-header p{
+.pricing-header p,
+.ques-header p{
     width: 100%;
     font-size: var(--body--font-size);
     line-height: var(--body-line-height);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: var(--gray);
     text-align: center;
 }
