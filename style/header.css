@@ -8,6 +8,7 @@
     background: #023b6d;
     display: flex;
     align-items: center;
+    font-family: var(--font-family-header);
 }
 /* header logo */
 

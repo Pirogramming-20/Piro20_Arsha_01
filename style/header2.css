@@ -2,6 +2,7 @@
     position: absolute;
     width: 100%;
     z-index: -1;
+    font-family: var(--font-family-header);
 }
 .fixed-top{
     position: fixed;
@@ -12,6 +13,7 @@
     background-color: rgba(40, 58, 90, 0.9);
     animation-name: colorChange;
     animation-timeline: view();
+    z-index: 999;
 }
 
 @keyframes colorChange {
@@ -19,7 +21,7 @@
         background-color: var(--header2-back); /* 초기 배경색 */
     }
     100% {
-        background-color:var(--header2-back); /* 최종 색상 */
+        background-color: var(--header2-back); /* 최종 색상 */
     }
 }
 
