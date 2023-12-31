@@ -1,0 +1,137 @@
+.price-box {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 12px; 
+}
+.price-box > li {
+    flex: 1; 
+    border-top: 4px solid #fff;
+    padding: 60px 40px;
+    margin-bottom: 20px; /* Space below each box */
+    max-width: calc(33.333% - 20px); /* For three items per row, adjust the percentage as needed */
+    box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .price-box li {
+        flex: 0 0 100%; /* Each box takes full width on small screens */
+        max-width: 100%;
+    }
+}
+
+.price-box h1 {
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #37517e;
+}
+
+.price-box .price {
+    font-size: 48px; /* Size for the main price */
+    color: #37517e;
+    font-weight: 400;
+    line-height: 1; /* Ensures tighter line spacing */
+    display: flex; /* Flex layout to align dollar sign and price */
+    align-items: baseline; /* Aligns items along their baseline */
+}
+
+.dollar {
+    position: relative;
+    top: -18px; /* Adjust as needed to raise the dollar sign */
+    font-size: 28px; /* Adjust to match your design */
+    margin-right: 5px; /* Space between dollar sign and number */
+}
+
+.per-month {
+    color: #47b2e4;
+    font-size: 18px;
+    margin-bottom: 25px;
+    display: block; /* Moves 'per month' to a new line */
+    margin-top: 5px; /* Space above 'per month' */
+}
+
+.price-box ul {
+    padding: 20px 0;
+    list-style: none;
+    color: #999;
+    text-align: left;
+    line-height: 20px;
+    margin-bottom: 16px;
+}
+
+.price-box ul li {
+    padding: 10px 0 10px 30px;
+}
+
+.price-box ul li::before {
+    content: '\f00c'; 
+    font-family: 'Font Awesome 5 Free'; 
+    color: green; 
+    margin-right: 8px; 
+    font-weight: 900; 
+}
+
+.price-box li:first-child ul li:nth-last-child(-n+2)::before {
+    content: '\f00d'; 
+    font-family: 'Font Awesome 5 Free'; 
+    color: #ccc; 
+    margin-right: 15px; 
+    font-weight: 900; 
+}
+
+/* to make sure text only gets crossed */
+.price-box li:first-child ul li:nth-last-child(-n+2) span{
+    color: #ccc; 
+    text-decoration: line-through;
+}
+
+/* Common styles for all buttons */
+.price-box .start-btn {
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Jost", sans-serif;
+    transition: 0.3s;
+    border: 1px solid #47b2e4;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Specific styles for the first and third buttons */
+.price-box li:first-child .start-btn,
+.price-box li:last-child .start-btn {
+    background-color: transparent;
+    color: #47b2e4;
+}
+
+.price-box li:first-child .start-btn:hover,
+.price-box li:last-child .start-btn:hover {
+    background-color: #47b2e4;
+    color: white;
+}
+
+/* Specific styles for the second button */
+.price-box li:nth-child(2) .start-btn {
+    background-color: #47b2e4;
+    color: white;
+}
+
+.price-box li:nth-child(2) .start-btn:hover {
+    background-color: #23a3df;
+}
+
+/* Targeting the second li element of the .price-box */
+.price-box > li:nth-child(2) {
+    border-top: 4px solid #47b2e4; /* Adjust the color and thickness as needed */
+}
+
+
+
+
+
+
+

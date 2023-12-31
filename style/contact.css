@@ -54,7 +54,8 @@
     left: 50%;
 }
 .contact_header_description,
-.team-header .description{
+.team-header .description,
+.pricing-header p{
     width: 100%;
     font-size: var(--body--font-size);
     line-height: var(--body-line-height);

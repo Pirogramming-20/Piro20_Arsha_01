@@ -12,7 +12,8 @@ p{
 
 .clients .container,
 .about .container,
-.team .container { 
+.team .container,
+.pricing .container { 
     padding: 0 12px;
     margin: 0 40px;
 }
@@ -45,7 +46,8 @@ p{
 /* About us */
 /* header */
 .about-header > h1,
-.team-header > h1{
+.team-header > h1,
+.pricing-header > h1{
     font-size: 32px;
     font-weight: bold;
     text-transform: uppercase;
@@ -56,7 +58,8 @@ p{
 }
 
 .about-header > h1::before,
-.team-header > h1::before {
+.team-header > h1::before,
+.pricing-header > h1::before {
     content: ''; 
     display: flex; 
     width: 120px; 
@@ -70,7 +73,8 @@ p{
 }
 
 .about-header > h1::after,
-.team-header > h1::after {
+.team-header > h1::after ,
+.pricing-header > h1::after{
     content: '';
     display: block;
     width: 40px; 
@@ -99,7 +103,7 @@ p{
 
 .about .left-content p,
 .about .left-content ul,
-.right-content p{
+.about .right-content p{
     margin-bottom: 16px;
 }
 

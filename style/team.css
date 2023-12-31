@@ -1,9 +1,10 @@
 
-.team .container{
+.team .container,
+.pricing .container {
     margin: 0 54.5px;
 }
 
-.container ul {
+.team .container ul {
     display: flex;
     flex-wrap: wrap; /* Allows items to wrap to the next line */
     gap: 20px; /* Adjust the space between boxes */
