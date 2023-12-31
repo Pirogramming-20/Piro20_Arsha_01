@@ -6,8 +6,12 @@ section {
     padding: 60px 0;
 }
 
+p{
+    color: #444444;
+}
+
 .clients .container,
-.about .container{ 
+.about .container { 
     padding: 0 12px;
     margin: 0 40px;
 }
@@ -82,7 +86,7 @@ section {
 }
 
 
-.about .left-content, .right-content {
+.about .left-content, .about .right-content {
     flex: 1; /* Each takes up equal space */
     padding: 0 12px; 
     line-height: 1.5;
@@ -160,7 +164,6 @@ section {
 }
 .why .left-content, .why .right-img {
     flex: 1;
-    padding: 0 12px; 
 }
 
 .why .right-img > img{
@@ -204,15 +207,137 @@ section {
 .toggle-checkbox:checked + label + p {
     display: block; 
 }
+.why .content-body label {
+    display: flex;
+    justify-content: space-between; /* Space out the label's contents */
+    align-items: center; /* Align items vertically in the center */
+}
+.toggle-checkbox:checked + label {
+    color: #47b2e4;
+    font-weight: 600;
+    font-size: 18px;
+}
 
-.why .content ul li p{
-    padding: 20px;
+.why .content-body i {
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.why .content-body p{
+    padding-top: 10px;
+    line-height: 1.5;
+}
+
+/* tech skills */
+.tech .container {
+    display: flex;
+    padding: 0 12px;
+    margin: 0 40px;
+}
+
+.tech .left-content, .tech .right-content {
+    padding: 0 12px;
+    flex: 1; /* This makes each child take up equal amount of space */
+}
+.tech .right-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tech .left-content img{
+    max-width: 100%;
+    height: auto;
+}
+
+.tech .right-content h1{
+    font-weight: bolder;
+    font-size: 34px;
+    color: #37517e;
+    margin-bottom: 8px;
+}
+
+.tech .right-content p{
+    line-height: 1.5;
+    font-style: italic;
+}
+
+/* .tech-bar li{
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+    --bs-progress-height: 1rem;
+    --bs-progress-font-size: 0.75rem;
+    --bs-progress-bg: #e9ecef;
+    --bs-progress-border-radius: 0.375rem;
+    --bs-progress-bar-color: #fff;
+    --bs-progress-bar-bg: #0d6efd;
+    --bs-progress-bar-transition: width 0.6s ease;
+    overflow: hidden; 
+    font-size: 0.75rem;
+}
+
+.tech-bar li title{
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #37517e;
+}
+
+.tech-bar .percent-bar{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #37517e;
+}
+
+.percent-bar .fill{
+    width: 1px;
+    height: 10px;
+    transition: 0.9s;
+    background-color: #4668a2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: var(--bs-progress-bar-color);
+    text-align: center;
+    white-space: nowrap;
+} */
+
+.title {
+    display: flex;
+    justify-content: space-between; 
 }
 
 
-.content-body li i {
+.percent-bar {
+    width: 100%; /* Full width of the container */
+    height: 10px; /* Adjust the height as needed */
+    background-color: var(--section-bg); /* Background color */
+    margin-top: 6px; /* Space between title and bar */
+    margin-bottom: 20px; /* Adjust this value as needed */
+    position: relative; /* Needed for absolute positioning of ::after */
+}
+
+.percent-bar::before {
+    content: '';
     position: absolute;
-    right: 0; /* Aligns the icon to the right */
-    padding-right: 10px;
-    transform: translateY(-50%); /* Adjust this value to vertically center */
+    left: 0;
+    top: 0;
+    height: 100%; /* Fill the height of the parent */
+    background-color: #4668a2 ; /* Color representing the fill */
+    width: var(--skill-percent);
+}
+
+.tech-bar li .title{
+    padding: 0;
+    font-size: 0.75rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #37517e;
 }
