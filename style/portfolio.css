@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
 }
-#container {
+.portfolio-container {
     
 }
 #head {
@@ -49,6 +49,7 @@
     justify-content: center;
     margin-bottom: 20px;
     font-family: var(--font-family-header);
+    font-weight: bold;
 }
 
 #portfolio-type li {
