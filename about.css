@@ -1,0 +1,217 @@
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+section {
+    padding: 60px 0;
+}
+.clients .container,
+.about .container{ 
+    padding: 0 12px;
+    margin: 0 40px;
+}
+
+.clients,
+.why{
+    background-color: var(--section-bg);
+}
+/* client */
+.clients {
+    padding: 12px 0;
+}
+
+.clients .img-container{
+    display: flex;
+    justify-content: center;
+}
+.client-img {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+.client-img > img {
+    max-width: 45%;
+    padding: 15px 0;
+    filter: grayscale(100);
+}
+
+/* About us */
+/* header */
+.about-header > h1{
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #37517e;
+    text-align: center;
+    position: relative; /* for the line to be positioned relative to the h1 */
+    margin-bottom: 58px;
+}
+
+.about-header > h1::before {
+    content: ''; 
+    display: flex; 
+    width: 120px; 
+    height: 1px; 
+    background: #ddd; 
+    margin: 0 auto; /* center the line */
+    position: absolute; /* relative to the h1 */
+    left: 0;
+    right: 0;
+    bottom: -20px; /* move the line under h1 */
+}
+
+.about-header > h1::after {
+    content: '';
+    display: block;
+    width: 40px; 
+    height: 3px; 
+    background: #47b2e4; 
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -21px; /* overlaps the grey bar */
+}
+
+/* content */
+
+.about .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.about .left-content, .right-content {
+    flex: 1; /* Each takes up equal space */
+    padding: 0 12px; 
+    line-height: 1.5;
+}
+
+.about .left-content p,
+.about .left-content ul,
+.right-content p{
+    margin-bottom: 16px;
+}
+
+.about .left-content ul li span {
+    font-size: 20px;
+    color: #47b2e4;
+    line-height: 1;
+}
+
+.about .left-content ul li:nth-of-type(1),
+.about .left-content ul li:nth-of-type(2) {
+    margin-bottom: 10px;
+}
+
+.about .btn {
+    display: inline-block; /* Allows the padding and other box model properties to work */
+    font-family: "Poppins", sans-serif; 
+    font-weight: 500; 
+    font-size: 14px; 
+    letter-spacing: 1px; 
+    padding: 12px 32px; 
+    border-radius: 4px; 
+    color: #47b2e4;
+    border: 2px solid #47b2e4; 
+    background-color: transparent; 
+    cursor: pointer; 
+    margin-top: 6px;
+    text-decoration: none;
+}
+
+.about .btn:hover {
+    background-color: #47b2e4; /* Example: Change background color on hover */
+    color: #fff; 
+}
+
+/* Why us */
+
+/* Flexbox container */
+
+.why .content {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    
+}
+.why .left-content{
+    padding: 60px 100px 60px 100px;
+}
+
+.why .content-header{
+    line-height: 1.2;
+}
+.why .content-header h1{
+    font-weight: 400;
+    font-size: 34px;
+    color: #37517e;
+    margin-bottom: 8px;
+}
+.why .content-header span{
+    font-weight: bolder;
+}
+.why .content-header p{
+    font-size: 15px;
+    color: #848484;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+.left-content, .right-img {
+    flex: 1;
+    padding: 0 12px; 
+}
+
+.why .right-img > img{
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+/* li */
+.why .content ul li{
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    position: relative;
+
+}
+
+.why .content ul li:nth-of-type(1) ,
+.why .content ul li:nth-of-type(2) {
+    margin-bottom: 15px;
+}
+
+.why .content-body span{
+    padding-right: 10px;
+    color: #47b2e4;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.why .content-body label{
+    text-align: right;
+}
+.toggle-checkbox {
+    display: none; /* Hide checkbox */
+}
+
+.toggle-checkbox + label + p {
+    display: none; 
+}
+
+.toggle-checkbox:checked + label + p {
+    display: block; 
+}
+
+.why .content ul li p{
+    padding: 20px;
+}
+
+
+.content-body li i {
+    position: absolute;
+    right: 0; /* Aligns the icon to the right */
+    padding-right: 10px;
+    transform: translateY(-50%); /* Adjust this value to vertically center */
+}
