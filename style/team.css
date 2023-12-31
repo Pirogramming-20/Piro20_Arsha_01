@@ -1,6 +1,7 @@
 
 .team .container,
-.pricing .container {
+.pricing .container,
+.question .container {
     margin: 0 54.5px;
 }
 

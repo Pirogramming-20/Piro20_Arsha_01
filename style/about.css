@@ -13,15 +13,27 @@ p{
 .clients .container,
 .about .container,
 .team .container,
-.pricing .container { 
+.pricing .container,
+.question .container { 
     padding: 0 12px;
     margin: 0 40px;
 }
 
 .clients,
 .why,
-.team{
+.team,
+.question{
     background-color: var(--section-bg);
+}
+
+.pricing-header p,
+.ques-header p{
+    width: 100%;
+    font-size: var(--body--font-size);
+    line-height: var(--body-line-height);
+    margin-bottom: 30px;
+    color: var(--gray);
+    text-align: center;
 }
 /* client */
 .clients {
@@ -47,7 +59,8 @@ p{
 /* header */
 .about-header > h1,
 .team-header > h1,
-.pricing-header > h1{
+.pricing-header > h1,
+.ques-header > h1{
     font-size: 32px;
     font-weight: bold;
     text-transform: uppercase;
@@ -59,7 +72,8 @@ p{
 
 .about-header > h1::before,
 .team-header > h1::before,
-.pricing-header > h1::before {
+.pricing-header > h1::before, 
+.ques-header > h1::before{
     content: ''; 
     display: flex; 
     width: 120px; 
@@ -74,7 +88,8 @@ p{
 
 .about-header > h1::after,
 .team-header > h1::after ,
-.pricing-header > h1::after{
+.pricing-header > h1::after,
+.ques-header > h1::after{
     content: '';
     display: block;
     width: 40px; 
@@ -209,11 +224,11 @@ p{
     display: none; /* Hide checkbox */
 }
 
-.toggle-checkbox + label + p {
+.why .toggle-checkbox + label + p {
     display: none; 
 }
 
-.toggle-checkbox:checked + label + p {
+.why .toggle-checkbox:checked + label + p {
     display: block; 
 }
 .why .content-body label {
@@ -221,10 +236,14 @@ p{
     justify-content: space-between; /* Space out the label's contents */
     align-items: center; /* Align items vertically in the center */
 }
-.toggle-checkbox:checked + label {
+.why .toggle-checkbox:checked + label {
     color: #47b2e4;
-    font-weight: 600;
-    font-size: 18px;
+    /* font-weight: 600;
+    font-size: 18px; */
+}
+
+.why .content ul li:hover {
+    color: #47b2e4;
 }
 
 .why .content-body i {
