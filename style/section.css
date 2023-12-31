@@ -11,6 +11,16 @@
     z-index: -1;
 }
 
+.first-page .container-lee {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 @media (max-width: 991px){
     .first-page {
         height: calc(100vh - 32px);
@@ -18,7 +28,7 @@
     }
 }
 
-.first-page .container{
+.first-page .container-lee{
     padding-top: 72px;
 }
 
