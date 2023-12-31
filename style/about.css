@@ -5,6 +5,7 @@ body{
 section {
     padding: 60px 0;
 }
+
 .clients .container,
 .about .container{ 
     padding: 0 12px;
@@ -157,7 +158,7 @@ section {
     margin-bottom: 16px;
     line-height: 1.5;
 }
-.left-content, .right-img {
+.why .left-content, .why .right-img {
     flex: 1;
     padding: 0 12px; 
 }
