@@ -7,7 +7,7 @@
 :root{
     --body-width: 1320px;
     --body-right-space: 10rem;
-    --body-header-font-size: 2.5rem;
+    --body-header-font-size: 2rem;
     --font-family-header: 'Jost', sans-serif;
     --font-family-body: 'Open Sans', sans-serif;
     --body--font-size: 1rem;
@@ -22,4 +22,5 @@
     --dark-blue3: #37517e;
     --dark-blue4: #6182ba;
     --gray : rgb(94, 94, 94);
+    --dark_gray: #212529;
 }
