@@ -102,7 +102,6 @@
 }
 .about ,
 .why,
-.team,
 .pricing,
 .question{
     animation-name: hi;
@@ -117,3 +116,38 @@
 .tech .right-content {
     animation: move-to-center-right 2s ease-out;
 }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.team .member {
+    animation-name: fadeInUp;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
+}
+
+.team .member:nth-child(1) {
+    animation-delay: 0.2s; 
+}
+
+.team .member:nth-child(2) {
+    animation-delay: 0.4s; 
+}
+
+.team .member:nth-child(3) {
+    animation-delay: 0.6s; 
+}
+
+.team .member:nth-child(4) {
+    animation-delay: 0.8s; 
+}
+

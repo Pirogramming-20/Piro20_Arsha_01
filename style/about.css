@@ -1,27 +1,4 @@
-.client-img:nth-child(3n+1) { /* First image in each set of three */
-    animation: move-left 2s ease-in-out;
-}
 
-.client-img:nth-child(3n+2) { /* Second (middle) image in each set of three */
-    animation: fade-in 2s ease-in-out;
-}
-
-.client-img:nth-child(3n+3) { /* Third image in each set of three */
-    animation: move-right 2s ease-in-out;
-}
-.about .why{
-    animation-name: hi;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-}
-
-.tech .left-content {
-    animation: move-to-center-left 2s ease-out;
-}
-
-.tech .right-content {
-    animation: move-to-center-right 2s ease-out;
-}
 
 body{
     font-family: "Open Sans", sans-serif;
