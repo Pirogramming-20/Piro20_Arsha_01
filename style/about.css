@@ -6,15 +6,34 @@ section {
     padding: 60px 0;
 }
 
+p{
+    color: #444444;
+}
+
 .clients .container,
-.about .container{ 
+.about .container,
+.team .container,
+.pricing .container,
+.question .container { 
     padding: 0 12px;
     margin: 0 40px;
 }
 
 .clients,
-.why{
+.why,
+.team,
+.question{
     background-color: var(--section-bg);
+}
+
+.pricing-header p,
+.ques-header p{
+    width: 100%;
+    font-size: var(--body--font-size);
+    line-height: var(--body-line-height);
+    margin-bottom: 30px;
+    color: var(--gray);
+    text-align: center;
 }
 /* client */
 .clients {
@@ -35,10 +54,22 @@ section {
     padding: 15px 0;
     filter: grayscale(100);
 }
+@media screen and (max-width: 992px) {
+    .clients .img-container {
+        flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
+    }
+    .client-img {
+        flex: 0 1 50%; /* Each image takes up half of the space */
+        max-width: 50%; /* Ensures that the images do not exceed half the container's width */
+    }
+}
 
 /* About us */
 /* header */
-.about-header > h1{
+.about-header > h1,
+.team-header > h1,
+.pricing-header > h1,
+.ques-header > h1{
     font-size: 32px;
     font-weight: bold;
     text-transform: uppercase;
@@ -48,7 +79,10 @@ section {
     margin-bottom: 58px;
 }
 
-.about-header > h1::before {
+.about-header > h1::before,
+.team-header > h1::before,
+.pricing-header > h1::before, 
+.ques-header > h1::before{
     content: ''; 
     display: flex; 
     width: 120px; 
@@ -61,7 +95,10 @@ section {
     bottom: -20px; /* move the line under h1 */
 }
 
-.about-header > h1::after {
+.about-header > h1::after,
+.team-header > h1::after ,
+.pricing-header > h1::after,
+.ques-header > h1::after{
     content: '';
     display: block;
     width: 40px; 
@@ -79,18 +116,19 @@ section {
 .about .content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* Allows items to wrap */
 }
 
 
-.about .left-content, .right-content {
-    flex: 1; /* Each takes up equal space */
+.about .left-content, .about .right-content {
+    flex: 1 1 50%; /* Half width for larger screens */
     padding: 0 12px; 
     line-height: 1.5;
 }
 
 .about .left-content p,
 .about .left-content ul,
-.right-content p{
+.about .right-content p{
     margin-bottom: 16px;
 }
 
@@ -122,8 +160,14 @@ section {
 }
 
 .about .btn:hover {
-    background-color: #47b2e4; /* Example: Change background color on hover */
+    background-color: #47b2e4; 
     color: #fff; 
+}
+
+@media screen and (max-width: 992px) {
+    .about .left-content, .about .right-content {
+        flex: 1 1 100%; /* Full width for smaller screens */
+    }
 }
 
 /* Why us */
@@ -160,7 +204,6 @@ section {
 }
 .why .left-content, .why .right-img {
     flex: 1;
-    padding: 0 12px; 
 }
 
 .why .right-img > img{
@@ -170,6 +213,26 @@ section {
 }
 
 /* li */
+.why .content {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap */
+}
+
+.why .left-content, .why .right-img {
+    flex: 1 1 50%; /* Half width for larger screens */
+}
+
+@media screen and (max-width: 992px) {
+    .why .left-content, .why .right-img {
+        flex: 1 1 100%; /* Full width for smaller screens */
+        order: 1; /* Adjust order if needed */
+    }
+
+    .why .right-img {
+        order: 0; /* Right image appears first */
+    }
+}
+
 .why .content ul li{
     padding: 20px;
     background: #fff;
@@ -197,22 +260,114 @@ section {
     display: none; /* Hide checkbox */
 }
 
-.toggle-checkbox + label + p {
+.why .toggle-checkbox + label + p {
     display: none; 
 }
 
-.toggle-checkbox:checked + label + p {
+.why .toggle-checkbox:checked + label + p {
     display: block; 
 }
+.why .content-body label {
+    display: flex;
+    justify-content: space-between; /* Space out the label's contents */
+    align-items: center; /* Align items vertically in the center */
+}
+.why .toggle-checkbox:checked + label {
+    color: #47b2e4;
+    /* font-weight: 600;
+    font-size: 18px; */
+}
 
-.why .content ul li p{
-    padding: 20px;
+.why .content ul li:hover {
+    color: #47b2e4;
+}
+
+.why .content-body i {
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.why .content-body p{
+    padding-top: 10px;
+    line-height: 1.5;
 }
 
 
-.content-body li i {
+
+/* tech skills */
+.tech .container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    padding: 0 12px;
+    margin: 0 40px;
+}
+
+.tech .left-content, .tech .right-content {
+    padding: 0 12px;
+    flex: 1 1 50%; /* Each takes up half of the container's width */
+}
+.tech .right-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tech .left-content img{
+    max-width: 100%;
+    height: auto;
+}
+
+.tech .right-content h1{
+    font-weight: bolder;
+    font-size: 34px;
+    color: #37517e;
+    margin-bottom: 8px;
+}
+
+.tech .right-content p{
+    line-height: 1.5;
+    font-style: italic;
+}
+
+
+.title {
+    display: flex;
+    justify-content: space-between; 
+}
+
+
+.percent-bar {
+    width: 100%; /* Full width of the container */
+    height: 10px; /* Adjust the height as needed */
+    background-color: var(--section-bg); /* Background color */
+    margin-top: 6px; /* Space between title and bar */
+    margin-bottom: 20px; /* Adjust this value as needed */
+    position: relative; /* Needed for absolute positioning of ::after */
+}
+
+.percent-bar::before {
+    content: '';
     position: absolute;
-    right: 0; /* Aligns the icon to the right */
-    padding-right: 10px;
-    transform: translateY(-50%); /* Adjust this value to vertically center */
+    left: 0;
+    top: 0;
+    height: 100%; /* Fill the height of the parent */
+    background-color: #4668a2 ; /* Color representing the fill */
+    width: var(--skill-percent);
 }
+
+.tech-bar li .title{
+    padding: 0;
+    font-size: 0.75rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #37517e;
+}
+
+@media screen and (max-width: 992px) {
+    .tech .left-content, .tech .right-content {
+        flex: 1 1 100%; /* Each takes up the full width */
+        padding: 0; /* Adjust padding as needed */
+        /* Additional styling adjustments for smaller screens */
+    }
+}
+
