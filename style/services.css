@@ -186,3 +186,5 @@ p {
     width: 50%;
   }
 }
+@media (min-width: 1200px) {
+}
