@@ -237,7 +237,7 @@
 }
 
 
-
+/*
 @media (min-width: 768px){
   #head, #pic-container{
     width : 540px;
@@ -266,7 +266,7 @@
     width : 296px;
   }
 }
-
+ 
 @media (min-width: 1400px){
   #head, #pic-container{
     width : 1116px;
@@ -274,4 +274,4 @@
   #pic-container .img, #pic-container .img img{
     width : 356px;
   }
-}
+} */
