@@ -1,0 +1,110 @@
+
+.team .container,
+.pricing .container,
+.question .container {
+    margin: 0 54.5px;
+}
+
+.team .container ul {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 20px; /* Adjust the space between boxes */
+}
+
+.member {
+    flex: 0 0 100%; /* Each box will take up roughly half the container width */
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1); 
+    padding: 30px; 
+    margin-bottom: 20px; 
+    border-radius: 5px;
+    background: #fff;
+    display: flex;
+
+}
+
+@media (min-width: 992px) {
+    .member {
+        flex: 0 0 48%; /* Adjust percentage to control size, allowing two members per row */
+        /* Adjust margins and padding as needed */
+    }
+}
+
+
+.member-pic img{
+    object-fit: cover;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+
+}
+.member-pic{
+    overflow: hidden;
+    width: 180px;
+    border-radius: 50%;
+}
+
+.member-info{
+    padding-left: 30px;
+}
+
+.member-info h1{
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #37517e;
+    line-height: 1.2;
+}
+
+.member-info span{
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.member-info span::after{
+    content: ''; 
+    display: flex; 
+    width: 50px; 
+    height: 1px; 
+    background: #cbd6e9; 
+    position: absolute; 
+    left: 0;
+    bottom: 0;
+}
+
+.member-info p{
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.member .social-media {
+    display: flex; 
+    margin-top: 12px;
+}
+
+.member .social-media a {
+    display: inline-flex; 
+    width: 32px;
+    height: 32px;
+    background-color: #eff2f8;
+    color: #37517e;
+    border-radius: 50%; 
+    justify-content: center; 
+    align-items: center; 
+    text-decoration: none;
+    margin-right: 8px; /* Space between icons */
+}
+.member .social-media a:hover {
+    background-color: #47b2e4; 
+    color: white; 
+}
+
+.member:hover{
+    transform: translateY(-10px);
+}
+
+
