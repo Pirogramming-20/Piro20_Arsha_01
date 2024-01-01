@@ -125,9 +125,12 @@ p {
       fixed center center;
   background-size: cover;
   padding: 120px 0;
+  display: flex;
+  justify-content: center;
 }
 .cta-container {
   display: flex;
+  justify-content: center;
   padding: 0 12px;
   margin: 0 120px;
 }
@@ -144,7 +147,6 @@ p {
   font-family: var(--font-family-header);
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
 }
 .cta-row h3 {
   color: #fff;
@@ -187,7 +189,8 @@ p {
     gap: 20px;
   }
   .services-menu .menu-box {
-    flex-basis: calc(50% - 20px); 
-    max-width: calc(50% - 20px); 
+    flex-basis: calc(50% - 20px);
+    max-width: calc(50% - 20px);
   }
 }
+/* @media (max-width: 1200px); */
