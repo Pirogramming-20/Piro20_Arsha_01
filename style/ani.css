@@ -116,6 +116,15 @@
     animation-timing-function: ease-in-out;
     animation-timeline: view(150% auto);
 }
+.about ,
+.why,
+.pricing,
+.question{
+    animation-name: hi;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
 @keyframes hi_2 {
     0% {
         opacity: 0;
