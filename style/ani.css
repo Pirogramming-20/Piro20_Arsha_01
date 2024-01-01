@@ -31,3 +31,89 @@
         transform: scale(1);
     }
 }
+
+/* For clients */
+
+@keyframes move-left {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes move-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* For tech */
+
+@keyframes move-to-center-left {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes move-to-center-right {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.client-img:nth-child(3n+1) { /* First image in each set of three */
+    animation: move-left 2s ease-in-out;
+}
+
+.client-img:nth-child(3n+2) { /* Second (middle) image in each set of three */
+    animation: fade-in 2s ease-in-out;
+}
+
+.client-img:nth-child(3n+3) { /* Third image in each set of three */
+    animation: move-right 2s ease-in-out;
+}
+.about ,
+.why,
+.team,
+.pricing,
+.question{
+    animation-name: hi;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.tech .left-content {
+    animation: move-to-center-left 2s ease-out;
+}
+
+.tech .right-content {
+    animation: move-to-center-right 2s ease-out;
+}
