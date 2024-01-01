@@ -22,6 +22,9 @@
         max-width: 60%;
         margin: 0 auto 30px auto;
     }
+    .pricing .container{
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 767px) {
@@ -30,6 +33,9 @@
         max-width: 80%;
         margin: 0 auto 30px auto;
     }
+    .pricing .container{
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 420px) {
@@ -37,6 +43,9 @@
         flex: 0 0 100%; /* Each box takes full width on small screens */
         max-width: 100%;
         margin: 0 auto 30px auto;
+    }
+    .pricing .container{
+        margin: 0 auto;
     }
 }
 
@@ -235,3 +244,8 @@
     font-size: 24px;
 }
 
+@media (max-width: 992px) {
+    .question .container{
+        margin: 0 auto;
+    }
+}

@@ -12,7 +12,7 @@
 }
 
 .member {
-    flex: 0 0 100%; /* Each box will take up roughly half the container width */
+    flex: 0 0 48%; /* Each box will take up roughly half the container width */
     box-shadow: 0 2px 15px rgba(0,0,0,0.1); 
     padding: 30px; 
     margin-bottom: 20px; 
@@ -21,13 +21,14 @@
     display: flex;
 
 }
-
-@media (min-width: 992px) {
-    .member {
-        flex: 0 0 48%; /* Adjust percentage to control size, allowing two members per row */
-        /* Adjust margins and padding as needed */
+ @media (max-width: 992px) {
+    .team .container{
+        margin: 0 auto;
     }
-}
+    .team .member{
+        margin: 0 auto;
+    }
+ }
 
 
 .member-pic img{
@@ -97,10 +98,6 @@
     align-items: center; 
     text-decoration: none;
     margin-right: 8px; /* Space between icons */
-}
-.member .social-media a:hover {
-    background-color: #47b2e4; 
-    color: white; 
 }
 
 .member:hover{
