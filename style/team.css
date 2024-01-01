@@ -2,7 +2,7 @@
 .team .container,
 .pricing .container,
 .question .container {
-    margin: 0 54.5px;
+    margin: 0 auto;
 }
 
 .team .container ul {
@@ -36,7 +36,6 @@
     border-radius: 50%;
     max-width: 100%;
     height: auto;
-
 }
 .member-pic{
     overflow: hidden;
