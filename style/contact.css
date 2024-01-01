@@ -7,10 +7,10 @@
 .contact_container {
     margin: 0 auto;
     padding: 60px;
-    animation-name: hi;
+    animation-name: hi_2;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
-    animation-timeline: view(150%, auto);
+    animation-timeline: view(150% auto);
 }
 .contact_header{
     display: flex;
