@@ -569,74 +569,76 @@
             </section>
                 
             <contact>
-                <div class="contact_header">
-                    <div class="contact_header-title">CONTACT</div>
-                    <div class="contact_header-underline">
-                        <div class="blue-underline"></div>
+                <div class="contact_container">
+                    <div class="contact_header">
+                        <div class="contact_header-title">CONTACT</div>
+                        <div class="contact_header-underline">
+                            <div class="blue-underline"></div>
+                        </div>
+                        <div class="contact_header_description">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</div>
                     </div>
-                    <div class="contact_header_description">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</div>
-                </div>
-                <div class="contact_body">
-                    <div class="contact_body_left">
-                        <div class="contact_body_left_top">
-                            <div class="item">
-                                <div class="icon">
-                                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="contact_body">
+                        <div class="contact_body_left">
+                            <div class="contact_body_left_top">
+                                <div class="item">
+                                    <div id="contact_body-icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div class="text">
+                                        <div class="text-header">Location:</div>
+                                        <div class="text-content">A108 Adam Street, New York, NY 535022</div>
+                                    </div>
                                 </div>
-                                <div class="text">
-                                    <div class="text-header">Location:</div>
-                                    <div class="text-content">A108 Adam Street, New York, NY 535022</div>
+                                <div class="item">
+                                    <div id="contact_body-icon">
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </div>
+                                    <div class="text">
+                                        <div class="text-header">Email:</div>
+                                        <div class="text-content">info@example.com</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div id="contact_body-icon">
+                                        <i class="fa-solid fa-mobile-screen-button"></i>
+                                    </div>
+                                    <div class="text">
+                                        <div class="text-header">Call:</div>
+                                        <div class="text-content">+1 5589 55488 55s</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="icon">
-                                    <i class="fa-regular fa-envelope"></i>
-                                </div>
-                                <div class="text">
-                                    <div class="text-header">Email:</div>
-                                    <div class="text-content">info@example.com</div>
-                                </div>
+                            <div class="map">
+                                <img src="./image/map.png" />
                             </div>
-                            <div class="item">
-                                <div class="icon">
-                                    <i class="fa-solid fa-mobile-screen-button"></i>
-                                </div>
-                                <div class="text">
-                                    <div class="text-header">Call:</div>
-                                    <div class="text-content">+1 5589 55488 55s</div>
-                                </div>
-                            </div>
-                        </div>    
-                        <div class="map">
-                            <img src="./map.png" />
                         </div>
+                        <form class="contact_body_right">
+                            <div class="row-group">
+                                <div class="row-group_item">
+                                    <label for="name" class="item-name">Your Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="row-group_item">
+                                    <label for="email" class="item-name">Your Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <label for="subject" class="item-name">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="item">
+                                <label for="message" class="item-name">Message</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <div class="item">
+                                <button type="submit">Send Message</button>
+                            </div>
+                        </form>
                     </div>
-                    <form class="contact_body_right">
-                        <div class="row-group">
-                            <div class="row-group_item">
-                                <label for="name" class="item-name">Your Name</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="row-group_item">
-                                <label for="email" class="item-name">Your Email</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <label for="subject" class="item-name">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="item">
-                            <label for="message" class="item-name">Message</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        <div class="item">
-                            <button type="submit">Send Message</button>
-                        </div>
-                    </form>
                 </div>
             </contact>
-            <footer>
+        <footer>
             <div class="newsletter">
                 <div class="newsletter-title">Join Our Newsletter</div>
                 <div class="newsletter-description">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</div>
@@ -645,58 +647,61 @@
                     <button type="submit">Subscribe</button>
                 </div>
             </div>
-            <div class="arsha_info">
-                <div class="first_block"> 
-                    <div class="header">ARSHA</div>
-                    <p>
-                        A108 Adam Street
-                       <br>
-                        New York, NY 535022
-                        <br>
-                        United States
-                        <br>
-                        <br>
-                        <strong>Phone:</strong> 
-                        +1 5589 55488 55
-                        <br>
-                        <strong>Email:</strong>
-                        info@example.com 
-                    </p>
-                </div>
-                <div class="second_block">
-                    <div class="header">Useful Links</div>
-                    <ul>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#">Home</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#">About us</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#">Services</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#">Terms of service</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                    </ul>
-                </div>
-                <div class="third_block">
-                    <div class="header">Our Services</div>
-                    <ul>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#">Web Design</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#">Web Development</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#">Product Management</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#">Marketing</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#">Graphic Design</a></li>
-                    </ul>
-                </div>
-                <div class="last_block">
-                    <div class="header">Our Social Networks</div>
-                    <p>
-                        Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies
-                        <br>
-                        <br>
-                        <div class="sns_icons">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-github"></i></a>
-                        </div>
-                    </p>
-                </div>
+            <div class="arsha_info-container">
+                <div class="arsha_info">
+                    <div class="first_block">
+                        <div class="first_block-header">ARSHA</div>
+                        <p>
+                            A108 Adam Street
+                           <br>
+                            New York, NY 535022
+                            <br>
+                            United States
+                            <br>
+                            <br>
+                            <strong>Phone:</strong>
+                            +1 5589 55488 55
+                            <br>
+                            <strong>Email:</strong>
+                            info@example.com
+                        </p>
+                    </div>
+                    <div class="second_block">
+                        <div class="second_block-header">Useful Links</div>
+                        <ul>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">Home</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">About us</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">Services</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="third_block">
+                        <div class="third_block-header">Our Services</div>
+                        <ul>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">Web Design</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">Web Development</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">Product Management</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">Marketing</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                        </ul>
+                    </div>
+                    <div class="last_block">
+                        <div class="last_block-header">Our Social Networks</div>
+                        <p>
+                            Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies
+                            <br>
+                            <br>
+                            <div class="sns_icons">
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </p>
+                    </div>
+            </div>
             </div>
             <div class="last_line">
                 <div class="copyright">© Copyright <strong>Arsha.</strong> All Rights Reserved</div>
