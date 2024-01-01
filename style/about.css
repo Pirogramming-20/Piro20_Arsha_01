@@ -65,6 +65,9 @@ p{
         flex: 0 1 50%; /* Each image takes up half of the space */
         max-width: 50%; /* Ensures that the images do not exceed half the container's width */
     }
+    .clients .container{
+        margin: 0 auto;
+    }
 }
 
 
@@ -174,6 +177,9 @@ p{
     .about .left-content, .about .right-content {
         flex: 1 1 100%; /* Full width for smaller screens */
     }
+    .about .container{
+        margin: 0 auto;
+    }
 }
 
 /* Why us */
@@ -236,6 +242,9 @@ p{
 
     .why .right-img {
         order: 0; /* Right image appears first */
+    }
+    .why .container{
+        margin: 0 auto;
     }
 }
 
@@ -377,6 +386,9 @@ p{
         flex: 1 1 100%; /* Each takes up the full width */
         padding: 0; /* Adjust padding as needed */
         /* Additional styling adjustments for smaller screens */
+    }
+    .tech .container{
+        margin: 0 auto;
     }
 }
 
