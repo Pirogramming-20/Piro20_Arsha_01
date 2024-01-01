@@ -60,11 +60,14 @@ p{
 }
 @media screen and (max-width: 992px) {
     .clients .img-container {
-        flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
+        flex-wrap: wrap; 
     }
     .client-img {
-        flex: 0 1 50%; /* Each image takes up half of the space */
-        max-width: 50%; /* Ensures that the images do not exceed half the container's width */
+        flex: 0 1 50%; 
+        max-width: 50%; 
+    }
+    .clients .container{
+        margin: 0 auto;
     }
 }
 
@@ -80,7 +83,7 @@ p{
     text-transform: uppercase;
     color: #37517e;
     text-align: center;
-    position: relative; /* for the line to be positioned relative to the h1 */
+    position: relative; 
     margin-bottom: 58px;
 }
 
@@ -123,12 +126,13 @@ p{
 .about .content {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Allows items to wrap */
+    flex-wrap: wrap; 
+    font-weight: 500;
 }
 
 
 .about .left-content, .about .right-content {
-    flex: 1 1 50%; /* Half width for larger screens */
+    flex: 1 1 50%; 
     padding: 0 12px; 
     line-height: 1.5;
 }
@@ -151,7 +155,7 @@ p{
 }
 
 .about .btn {
-    display: inline-block; /* Allows the padding and other box model properties to work */
+    display: inline-block; 
     font-family: "Poppins", sans-serif; 
     font-weight: 500; 
     font-size: 14px; 
@@ -173,13 +177,15 @@ p{
 
 @media screen and (max-width: 992px) {
     .about .left-content, .about .right-content {
-        flex: 1 1 100%; /* Full width for smaller screens */
+        flex: 1 1 100%; 
+    }
+    .about .container{
+        margin: 0 auto;
     }
 }
 
 /* Why us */
 
-/* Flexbox container */
 
 .why .content {
     display: flex;
@@ -222,21 +228,24 @@ p{
 /* li */
 .why .content {
     display: flex;
-    flex-wrap: wrap; /* Allows items to wrap */
+    flex-wrap: wrap; 
 }
 
 .why .left-content, .why .right-img {
-    flex: 1 1 50%; /* Half width for larger screens */
+    flex: 1 1 50%; 
 }
 
 @media screen and (max-width: 992px) {
     .why .left-content, .why .right-img {
-        flex: 1 1 100%; /* Full width for smaller screens */
-        order: 1; /* Adjust order if needed */
+        flex: 1 1 100%; 
+        order: 1; 
     }
 
     .why .right-img {
-        order: 0; /* Right image appears first */
+        order: 0; 
+    }
+    .why .container{
+        margin: 0 auto;
     }
 }
 
@@ -273,8 +282,10 @@ p{
 
 .why .toggle-checkbox:checked + label {
     color: #47b2e4;
-    /* font-weight: 600;
-    font-size: 18px; */
+}
+.why .ques{
+    font-family: "Poppins", sans-serif;
+    font-weight: 540;
 }
 
 /* .why .content ul label:hover {
@@ -282,13 +293,11 @@ p{
 } */
 
 .why .content-body label:hover {
-    color: #47b2e4; /* Change to your desired hover color */
-    /* Additional hover styles can go here */
+    color: #47b2e4; 
 }
 
 .why .content-body label:hover .fa-solid {
-    color: #47b2e4; /* Change to your desired icon hover color */
-    /* Additional hover styles for the icon can go here */
+    color: #47b2e4; 
 }
 
 
@@ -307,14 +316,14 @@ p{
 /* tech skills */
 .tech .container {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap */
+    flex-wrap: wrap; 
     padding: 0 12px;
     margin: 0 auto;
 }
 
 .tech .left-content, .tech .right-content {
     padding: 0 12px;
-    flex: 1 1 50%; /* Each takes up half of the container's width */
+    flex: 1 1 50%; 
 }
 .tech .right-content{
     display: flex;
@@ -347,12 +356,12 @@ p{
 
 
 .percent-bar {
-    width: 100%; /* Full width of the container */
-    height: 10px; /* Adjust the height as needed */
-    background-color: var(--section-bg); /* Background color */
-    margin-top: 6px; /* Space between title and bar */
-    margin-bottom: 20px; /* Adjust this value as needed */
-    position: relative; /* Needed for absolute positioning of ::after */
+    width: 100%; 
+    height: 10px; 
+    background-color: var(--section-bg); 
+    margin-top: 6px; 
+    margin-bottom: 20px; 
+    position: relative; 
 }
 
 .percent-bar::before {
@@ -360,8 +369,8 @@ p{
     position: absolute;
     left: 0;
     top: 0;
-    height: 100%; /* Fill the height of the parent */
-    background-color: #4668a2 ; /* Color representing the fill */
+    height: 100%; 
+    background-color: #4668a2 ; 
     width: var(--skill-percent);
 }
 
@@ -375,9 +384,11 @@ p{
 
 @media screen and (max-width: 992px) {
     .tech .left-content, .tech .right-content {
-        flex: 1 1 100%; /* Each takes up the full width */
-        padding: 0; /* Adjust padding as needed */
-        /* Additional styling adjustments for smaller screens */
+        flex: 1 1 100%; 
+        padding: 0; 
+    }
+    .tech .container{
+        margin: 0 auto;
     }
 }
 
