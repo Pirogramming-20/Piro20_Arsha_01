@@ -10,6 +10,7 @@
     animation-name: hi;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
+    animation-timeline: view(100%, auto);
 }
 .contact_header{
     display: flex;
