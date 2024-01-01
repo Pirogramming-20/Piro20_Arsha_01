@@ -10,6 +10,20 @@
     overflow: hidden;
     z-index: -1;
 }
+@media (max-width: 991px) {
+    .first-page{
+    padding-top: 72.5px;
+    }
+}
+.first-page .container-lee {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 @media (max-width: 991px){
     .first-page {
@@ -18,7 +32,7 @@
     }
 }
 
-.first-page .container{
+.first-page .container-lee{
     padding-top: 72px;
 }
 
@@ -145,7 +159,7 @@
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-direction:alternate-reverse;
-    animation-iteration-count:infinite
+    animation-iteration-count:infinite;
 }
 
 @keyframes up-down{

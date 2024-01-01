@@ -1,0 +1,33 @@
+.ani_first_page-left{
+    animation-name: hi;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes hi {
+    0% {
+        opacity: 0;
+        transform:translate3d(0,200px,0);
+    }   
+    100%{ 
+        opacity: 1;
+        transform:translate3d(0,0,0);
+    }
+}
+
+.ani_first_page-right{
+    animation-name: doudoug;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes doudoug {
+    0% {
+        opacity: 0;
+        transform: scale(0.6);
+    }   
+    100%{ 
+        opacity: 1;
+        transform: scale(1);
+    }
+}

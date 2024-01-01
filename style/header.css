@@ -1,5 +1,5 @@
 /* header 시작 */
-.header {
+.header_top {
     position: fixed;
     left: 0;
     right: 0;
@@ -8,6 +8,8 @@
     background: #023b6d;
     display: flex;
     align-items: center;
+    font-family: var(--font-family-header);
+    z-index: 999;
 }
 /* header logo */
 
@@ -56,7 +58,6 @@
 
 .preview-devices ul div{
     width: 20px;
-    height: 25px;
     font-size: 1rem;
 }
 
@@ -81,7 +82,6 @@
 
 .header-icon-arrow{
     width: 24px;
-    height: 24px;
     text-align: center;
 }
 
@@ -111,7 +111,6 @@
 
 .icon_external_link{
     width: 20px;
-    height: 23px;
     color: var(--gray-unselect);
 
 }
@@ -142,7 +141,6 @@
 
 .download i{
     width: 20px;
-    height: 17px;
     font-size: 1.1rem;
 }
 
