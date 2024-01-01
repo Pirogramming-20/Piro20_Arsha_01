@@ -2,7 +2,7 @@
 .team .container,
 .pricing .container,
 .question .container {
-    margin: 0 54.5px;
+    margin: 0 auto;
 }
 
 .team .container ul {

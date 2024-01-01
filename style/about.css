@@ -15,10 +15,11 @@ p{
 .clients .container,
 .about .container,
 .team .container,
+.why .container,
 .pricing .container,
 .question .container { 
     padding: 0 12px;
-    margin: 0 40px;
+    margin: 0 auto;
 }
 
 .clients,
@@ -308,7 +309,7 @@ p{
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap */
     padding: 0 12px;
-    margin: 0 40px;
+    margin: 0 auto;
 }
 
 .tech .left-content, .tech .right-content {
