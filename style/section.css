@@ -159,7 +159,7 @@
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-direction:alternate-reverse;
-    animation-iteration-count:infinite
+    animation-iteration-count:infinite;
 }
 
 @keyframes up-down{
