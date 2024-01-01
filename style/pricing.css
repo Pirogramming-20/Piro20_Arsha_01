@@ -42,7 +42,7 @@
 
 
 .price-box h1 {
-    font-weight: 500;
+    font-weight: 550;
     margin-bottom: 15px;
     font-size: 20px;
     color: #37517e;
@@ -51,7 +51,7 @@
 .price-box .price {
     font-size: 48px; /* Size for the main price */
     color: #37517e;
-    font-weight: 400;
+    font-weight: 550;
     line-height: 1; /* Ensures tighter line spacing */
     display: flex; /* Flex layout to align dollar sign and price */
     align-items: baseline; /* Aligns items along their baseline */
@@ -182,15 +182,24 @@
     margin-bottom: 15px;
 }
 
-.question .content-body label{
-    text-align: right;
+.question .content-body label,
+.why .content-body label{
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     line-height: 24px;
-    font-weight: 600;
-    padding: 0 30px;
+    font-weight: 550;
     cursor: pointer;
+    display: flex;
+    align-items: baseline; 
+    justify-content: space-between; 
 }
+
+.question .content-body label span,
+.why .content-body label p{
+    flex-grow: 1; /* text take up all available space */
+    text-align: left;
+}
+
 .question .toggle-checkbox {
     display: none; /* Hide checkbox */
 }
@@ -203,11 +212,7 @@
 .question .toggle-checkbox:checked + label + p {
     display: block; 
 }
-.question .content-body label {
-    display: flex;
-    justify-content: space-between; /* Space out the label's contents */
-    align-items: center; /* Align items vertically in the center */
-}
+
 .question .toggle-checkbox:checked + label {
     color: #47b2e4;
     /* font-weight: 600;
@@ -215,15 +220,10 @@
     cursor: pointer;
 }
 
-.question .content-body li:hover {
+.question .content-body li:hover,
+.why .content-body label:hover{
     color: #47b2e4;
 }
-
-
-/* .question .content-body i {
-    font-size: 13px;
-    font-weight: bolder;
-} */
 
 
 .question .content-body p{
@@ -231,9 +231,7 @@
     line-height: 1.5;
 }
 .icon-help {
-    /* Custom styles */
     color: blue;
     font-size: 24px;
-    /* Add more styling as needed */
 }
 
