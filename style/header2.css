@@ -161,6 +161,10 @@
     border: 2px solid #47b2e4;
     font-weight: 600;
 }
+.header2-navbar .getstarted_link:hover{
+    background-color: #47b2e4;
+    color: white;
+}
 
 .header2-navbar .dropdown ul {
     display: block;
