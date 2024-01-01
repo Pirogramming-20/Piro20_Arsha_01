@@ -167,12 +167,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
 #fixed_icon:hover {
     background-color: #6BC1E9;
+    color: white;
 }
 @media (max-width:992px){    
     .arsha_info .first_block, .arsha_info .second_block, .arsha_info .third_block, .arsha_info .last_block {
