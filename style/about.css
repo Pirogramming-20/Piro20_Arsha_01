@@ -252,10 +252,6 @@ p{
     font-weight: 600;
     font-size: 18px;
 }
-
-.why .content-body label{
-    text-align: right;
-}
 .toggle-checkbox {
     display: none; /* Hide checkbox */
 }
@@ -267,20 +263,27 @@ p{
 .why .toggle-checkbox:checked + label + p {
     display: block; 
 }
-.why .content-body label {
-    display: flex;
-    justify-content: space-between; /* Space out the label's contents */
-    align-items: center; /* Align items vertically in the center */
-}
+
 .why .toggle-checkbox:checked + label {
     color: #47b2e4;
     /* font-weight: 600;
     font-size: 18px; */
 }
 
-.why .content ul li:hover {
+/* .why .content ul label:hover {
     color: #47b2e4;
+} */
+
+.why .content-body label:hover {
+    color: #47b2e4; /* Change to your desired hover color */
+    /* Additional hover styles can go here */
 }
+
+.why .content-body label:hover .fa-solid {
+    color: #47b2e4; /* Change to your desired icon hover color */
+    /* Additional hover styles for the icon can go here */
+}
+
 
 .why .content-body i {
     font-size: 13px;
