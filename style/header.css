@@ -66,7 +66,7 @@
 }
 
 /* 최근 페이지 */
-@media (min-width: 768px){
+@media (max-width: 768px){
     .current-page {
         margin-left: auto;
     }
