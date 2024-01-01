@@ -103,5 +103,8 @@
 .member:hover{
     transform: translateY(-10px);
 }
-
+.member .social-media a:hover {
+    background-color: #47b2e4; 
+    color: white; 
+}
 
