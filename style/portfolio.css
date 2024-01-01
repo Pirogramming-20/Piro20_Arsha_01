@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
 }
-#container {
+.portfolio-container {
     
 }
 #head {
@@ -14,6 +14,7 @@
     justify-content: center;
     text-align: center;
     padding-bottom: 30px;
+    font-family: var(--font-family-header);
 }
 #head h2 {
     font-size: 32px;
@@ -47,6 +48,8 @@
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    font-family: var(--font-family-header);
+    font-weight: bold;
 }
 
 #portfolio-type li {
@@ -77,6 +80,7 @@
     position: relative;
     height: 1267.1px;
     width: 1296px;
+    font-family: var(--font-family-header);
 }
 #pic-container .pic-frame {
     padding: 0 12px;
@@ -189,7 +193,7 @@
     transition: all 0.3s;
     background: rgba(55, 81, 126, 0.8);
     padding: 10px 15px;
-    height: 42.6px;
+    height: 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -205,19 +209,45 @@
     font-size: 14px;
     margin-bottom: 0;
 }
-.img-info a {
+.img-info .left-info {
     position: absolute;
     right: 40px;
     font-size: 24px;
-    top: calc(50% - 18px);
+    top: calc(50% - 15px);
     color: #fff;
     transition: 0.3s;
     width: 24px;
-    height: 36px;
+    height: 25px;
 }
-
-.plus-icon::before {
-    content: url("./plus-24.png");
+.fa-plus::before {
+    content: "";
+    box-sizing: border-box;
+}
+.fa-solid {
+    font-family: boxicons!important;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    display: inline-block;
+    text-transform: none;
+    transition: 0.3s;
+}
+.fa-solid:hover, .fa-link:hover {
+    color: #47b2e4;
+}
+.img-info .right-info {
     position: absolute;
-    background-color: white;
+    right: 10px;
+    font-size: 24px;
+    top: calc(50% - 14px);
+    color: #fff;
+    transition: 0.3s;
+    width: 24px;
+    height: 25px;
+}
+.fa-link::before {
+    content: "";
+    box-sizing: border-box;
 }
