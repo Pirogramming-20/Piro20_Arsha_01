@@ -2,17 +2,17 @@
 .team .container,
 .pricing .container,
 .question .container {
-    margin: 0 54.5px;
+    margin: 0 auto;
 }
 
 .team .container ul {
     display: flex;
-    flex-wrap: wrap; /* Allows items to wrap to the next line */
-    gap: 20px; /* Adjust the space between boxes */
+    flex-wrap: wrap; 
+    gap: 20px; 
 }
 
 .member {
-    flex: 0 0 48%; /* Each box will take up roughly half the container width */
+    flex: 0 0 48%; 
     box-shadow: 0 2px 15px rgba(0,0,0,0.1); 
     padding: 30px; 
     margin-bottom: 20px; 
@@ -36,7 +36,6 @@
     border-radius: 50%;
     max-width: 100%;
     height: auto;
-
 }
 .member-pic{
     overflow: hidden;

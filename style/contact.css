@@ -10,7 +10,7 @@
     animation-name: hi;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
-    animation-timeline: view(100%, auto);
+    animation-timeline: view(150%, auto);
 }
 .contact_header{
     display: flex;
@@ -206,7 +206,7 @@ button[type="submit"]:hover {
         width: 100%;
     }
     .contact_container {
-        margin: 2rem;
+        margin: 2rem auto;
     }
 }
 @media (max-width:768px){

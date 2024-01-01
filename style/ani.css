@@ -90,15 +90,15 @@
     }
 }
 
-.client-img:nth-child(3n+1) { /* First image in each set of three */
+.client-img:nth-child(3n+1) { 
     animation: move-left 2s ease-in-out;
 }
 
-.client-img:nth-child(3n+2) { /* Second (middle) image in each set of three */
+.client-img:nth-child(3n+2) { 
     animation: fade-in 2s ease-in-out;
 }
 
-.client-img:nth-child(3n+3) { /* Third image in each set of three */
+.client-img:nth-child(3n+3) { 
     animation: move-right 2s ease-in-out;
 }
 .about > div,
