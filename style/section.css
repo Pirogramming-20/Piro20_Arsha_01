@@ -10,7 +10,11 @@
     overflow: hidden;
     z-index: -1;
 }
-
+@media (max-width: 991px) {
+    .first-page{
+    padding-top: 72.5px;
+    }
+}
 .first-page .container-lee {
     align-items: center;
     display: flex;

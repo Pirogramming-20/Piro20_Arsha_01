@@ -1,5 +1,5 @@
 /* header 시작 */
-.header {
+.header_top {
     position: fixed;
     left: 0;
     right: 0;
@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     font-family: var(--font-family-header);
+    z-index: 999;
 }
 /* header logo */
 
