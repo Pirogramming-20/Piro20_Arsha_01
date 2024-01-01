@@ -217,14 +217,14 @@
   transition: 0.3s;
 }
 
-.fa-solid {
+.fa-icon {
   font-weight: 400;
   font-style: normal;
   line-height: 1;
   transition: 0.3s;
   width: 100%;
 }
-.fa-solid:hover {
+.fa-icon:hover {
   color: #47b2e4;
 }
 .img-info .right-info {

@@ -170,3 +170,19 @@ p {
   background: #47b2e4;
   border: 2px solid #47b2e4;
 }
+@media (min-width: 1200px) {
+  .menu-box {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .services-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 768px) {
+  .menu-box {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
