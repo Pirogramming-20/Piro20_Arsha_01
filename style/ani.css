@@ -9,6 +9,7 @@
         opacity: 0;
         transform:translate3d(0,200px,0);
     }   
+
     100%{ 
         opacity: 1;
         transform:translate3d(0,0,0);
@@ -100,13 +101,30 @@
 .client-img:nth-child(3n+3) { /* Third image in each set of three */
     animation: move-right 2s ease-in-out;
 }
-.about ,
-.why,
-.pricing,
-.question{
-    animation-name: hi;
-    animation-duration: 2s;
+.about > div,
+.why  > div,
+.question > div{
+    animation-name: hi_2;
     animation-timing-function: ease-in-out;
+    animation-timeline: view(100% auto);
+}
+.why  > div{
+    animation-timeline: view(150% auto)
+}
+.pricing  > div{
+    animation-name: hi_2;
+    animation-timing-function: ease-in-out;
+    animation-timeline: view(150% auto);
+}
+@keyframes hi_2 {
+    0% {
+        opacity: 0;
+        transform:translate3d(0,150px,0);
+    }   
+    
+    100%{ 
+        transform:translate3d(0,0,0);
+    }
 }
 
 .tech .left-content {
