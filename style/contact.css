@@ -6,7 +6,10 @@
 }
 .contact_container {
     margin: 0 auto;
-    padding: 5%;
+    padding: 60px;
+    animation-name: hi;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
 }
 .contact_header{
     display: flex;
@@ -18,7 +21,7 @@
     font-size: var(--body-header-font-size);
     font-weight: bold;
     font-family: var(--font-family-header);
-    padding: 1rem;
+    padding-bottom: 1rem;
     color: var(--dark-blue3);
 }
 .contact_header-underline {
