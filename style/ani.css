@@ -101,13 +101,6 @@
 .client-img:nth-child(3n+3) { 
     animation: move-right 2s ease-in-out;
 }
-.about > div,
-.why  > div,
-.question > div{
-    animation-name: hi_2;
-    animation-timing-function: ease-in-out;
-    animation-timeline: view(100% auto);
-}
 .why  > div{
     animation-timeline: view(150% auto)
 }
@@ -125,14 +118,6 @@
     100%{ 
         transform:translate3d(0,0,0);
     }
-}
-
-.tech .left-content {
-    animation: move-to-center-left 2s ease-out;
-}
-
-.tech .right-content {
-    animation: move-to-center-right 2s ease-out;
 }
 
 @keyframes fadeInUp {
@@ -168,4 +153,38 @@
 .team .member:nth-child(4) {
     animation-delay: 0.8s; 
 }
+/*스크롤시 애니 추가*/
+.ani-doudoug, .ani-center-left, .ani-center-right, .ani-up-slow{
+    animation-timing-function: ease-in-out;
+    animation-timeline:view(90% 0) ;
+}
+.ani-doudoug{
+    animation-name: doudoug;
+}
+#cta .ani-doudoug{
+    animation-timeline: view(60% 0);
+}
 
+.ani-up{
+    animation-name: hi;
+    animation-timing-function: ease-in-out;
+    animation-timeline: view(80% auto);
+}
+
+.ani-center-left{
+    animation-name: move-to-center-left;
+}
+.ani-center-right{
+    animation-name: move-to-center-right;
+}
+.ani-up-fasts{
+    animation: hi;
+    animation-timeline:view(120% 0) ;   
+}
+.ani-up-slow{
+    animation: hi;
+    animation-timeline:view(80% 0) ;   
+}
+.contact_container .ani-doudoug{
+    animation-timeline:view(120% 0)
+}
