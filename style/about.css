@@ -54,6 +54,15 @@ p{
     padding: 15px 0;
     filter: grayscale(100);
 }
+@media screen and (max-width: 992px) {
+    .clients .img-container {
+        flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
+    }
+    .client-img {
+        flex: 0 1 50%; /* Each image takes up half of the space */
+        max-width: 50%; /* Ensures that the images do not exceed half the container's width */
+    }
+}
 
 /* About us */
 /* header */
@@ -107,11 +116,12 @@ p{
 .about .content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* Allows items to wrap */
 }
 
 
 .about .left-content, .about .right-content {
-    flex: 1; /* Each takes up equal space */
+    flex: 1 1 50%; /* Half width for larger screens */
     padding: 0 12px; 
     line-height: 1.5;
 }
@@ -150,8 +160,14 @@ p{
 }
 
 .about .btn:hover {
-    background-color: #47b2e4; /* Example: Change background color on hover */
+    background-color: #47b2e4; 
     color: #fff; 
+}
+
+@media screen and (max-width: 992px) {
+    .about .left-content, .about .right-content {
+        flex: 1 1 100%; /* Full width for smaller screens */
+    }
 }
 
 /* Why us */
@@ -197,6 +213,26 @@ p{
 }
 
 /* li */
+.why .content {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap */
+}
+
+.why .left-content, .why .right-img {
+    flex: 1 1 50%; /* Half width for larger screens */
+}
+
+@media screen and (max-width: 992px) {
+    .why .left-content, .why .right-img {
+        flex: 1 1 100%; /* Full width for smaller screens */
+        order: 1; /* Adjust order if needed */
+    }
+
+    .why .right-img {
+        order: 0; /* Right image appears first */
+    }
+}
+
 .why .content ul li{
     padding: 20px;
     background: #fff;
@@ -256,16 +292,19 @@ p{
     line-height: 1.5;
 }
 
+
+
 /* tech skills */
 .tech .container {
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
     padding: 0 12px;
     margin: 0 40px;
 }
 
 .tech .left-content, .tech .right-content {
     padding: 0 12px;
-    flex: 1; /* This makes each child take up equal amount of space */
+    flex: 1 1 50%; /* Each takes up half of the container's width */
 }
 .tech .right-content{
     display: flex;
@@ -290,52 +329,6 @@ p{
     font-style: italic;
 }
 
-/* .tech-bar li{
-    height: 60px;
-    display: block;
-    background: none;
-    border-radius: 0;
-    --bs-progress-height: 1rem;
-    --bs-progress-font-size: 0.75rem;
-    --bs-progress-bg: #e9ecef;
-    --bs-progress-border-radius: 0.375rem;
-    --bs-progress-bar-color: #fff;
-    --bs-progress-bar-bg: #0d6efd;
-    --bs-progress-bar-transition: width 0.6s ease;
-    overflow: hidden; 
-    font-size: 0.75rem;
-}
-
-.tech-bar li title{
-    padding: 0;
-    margin: 0 0 6px 0;
-    text-transform: uppercase;
-    display: block;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
-    color: #37517e;
-}
-
-.tech-bar .percent-bar{
-    font-size: 14px;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
-    color: #37517e;
-}
-
-.percent-bar .fill{
-    width: 1px;
-    height: 10px;
-    transition: 0.9s;
-    background-color: #4668a2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-    color: var(--bs-progress-bar-color);
-    text-align: center;
-    white-space: nowrap;
-} */
 
 .title {
     display: flex;
@@ -369,3 +362,12 @@ p{
     font-family: "Poppins", sans-serif;
     color: #37517e;
 }
+
+@media screen and (max-width: 992px) {
+    .tech .left-content, .tech .right-content {
+        flex: 1 1 100%; /* Each takes up the full width */
+        padding: 0; /* Adjust padding as needed */
+        /* Additional styling adjustments for smaller screens */
+    }
+}
+

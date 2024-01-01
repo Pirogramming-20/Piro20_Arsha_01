@@ -14,12 +14,32 @@
     border-radius: 5px;
 }
 
-@media (max-width: 768px) { /* Adjust breakpoint as needed */
-    .price-box li {
+
+
+@media (max-width: 992px) {
+    .price-box li  {
         flex: 0 0 100%; /* Each box takes full width on small screens */
-        max-width: 100%;
+        max-width: 60%;
+        margin: 0 auto 30px auto;
     }
 }
+
+@media (max-width: 767px) {
+    .price-box li  {
+        flex: 0 0 100%; /* Each box takes full width on small screens */
+        max-width: 80%;
+        margin: 0 auto 30px auto;
+    }
+}
+
+@media (max-width: 420px) {
+    .price-box li  {
+        flex: 0 0 100%; /* Each box takes full width on small screens */
+        max-width: 100%;
+        margin: 0 auto 30px auto;
+    }
+}
+
 
 .price-box h1 {
     font-weight: 500;
@@ -137,14 +157,17 @@
 }
 .question .content-body i{
     padding-right: 10px;
-    color: #47b2e4;
-    font-weight: 600;
     font-size: 18px;
 }
+.fa-circle-question{
+    color: #47b2e4;
+}
+
 .question .content-body ul{
     margin-bottom: 16px;
 }
 .question .content-body ul li{
+    color: #37517e;
     padding: 20px;
     background: #fff;
     border-radius: 4px;
@@ -161,11 +184,10 @@
 
 .question .content-body label{
     text-align: right;
-    color: #37517e;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     line-height: 24px;
-    font-weight: 500;
+    font-weight: 600;
     padding: 0 30px;
     cursor: pointer;
 }
@@ -195,16 +217,23 @@
 
 .question .content-body li:hover {
     color: #47b2e4;
-
 }
 
-.question .content-body i {
+
+/* .question .content-body i {
     font-size: 13px;
     font-weight: bolder;
-}
+} */
+
 
 .question .content-body p{
     padding-top: 10px;
     line-height: 1.5;
+}
+.icon-help {
+    /* Custom styles */
+    color: blue;
+    font-size: 24px;
+    /* Add more styling as needed */
 }
 
